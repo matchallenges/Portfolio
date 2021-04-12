@@ -17,3 +17,6 @@ myName = 8
 let ourName = "freecodecamp" // used throughout the scope of where you define it
 
 const pi = 3.14 // the variable never changes
+
+var a; // declaring
+var b = 2; // declaring and assigning in one line
