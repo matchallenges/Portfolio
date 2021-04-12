@@ -9,3 +9,11 @@ this is a multi-line comment
 number = 9;
 
 // Data Types: undefined, null, boolean, string, symbol, number and object
+
+var myName = "Mathieu" // used throughout the whole program
+
+myName = 8
+
+let ourName = "freecodecamp" // used throughout the scope of where you define it
+
+const pi = 3.14 // the variable never changes
