@@ -29,3 +29,9 @@ var myDecimal = 0.008;
 
 var remainder;
 remainder = 11 % 3;
+
+myVar *= 10;
+console.log(myVar)
+
+myVar /= 10;
+console.log(myVar)
