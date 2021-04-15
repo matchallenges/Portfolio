@@ -86,3 +86,7 @@ console.log(ourArray)
 // Remove last variable using ourArray.pop()
 
 ourArray.pop()
+
+ourArray.shift()
+console.log(ourArray) // shift to the left
+ourArray.unshift("Lucas") // adds Lucas to the start of the array 
