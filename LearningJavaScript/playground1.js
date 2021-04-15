@@ -61,3 +61,18 @@ console.log(ourStr.length)
 // Indexing
 
 console.log(ourStr[0])
+console.log(ourStr[ourStr.length - ourStr.length + 1])
+
+// The characters of strings are immutable
+
+// Arrays
+
+var ourArray = ["John", 23, [1, 2, 3]]
+
+console.log(ourArray[2])
+
+// Array indexes are mutable
+
+ourArray[0] = `Mathieu`
+
+console.log(ourArray[0])
