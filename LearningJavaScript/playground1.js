@@ -53,3 +53,11 @@ var ourStr = "I come first. " + "I come second.";
 
 var ourStr2 = "I come third. ";
 ourStr2 += "I come fourth.";
+
+// Length of a string
+
+console.log(ourStr.length)
+
+// Indexing
+
+console.log(ourStr[0])
