@@ -76,3 +76,13 @@ console.log(ourArray[2])
 ourArray[0] = `Mathieu`
 
 console.log(ourArray[0])
+
+// Append data to the end of an array with push ourArray.push()
+
+ourArray.push('Jackson', 'Charles', 'Fargo')
+
+console.log(ourArray)
+
+// Remove last variable using ourArray.pop()
+
+ourArray.pop()
