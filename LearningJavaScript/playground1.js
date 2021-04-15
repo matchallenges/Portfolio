@@ -7,15 +7,15 @@ var c = "I am a string";
 
 a += 1;
 b += 5;
-c = c +" String!"
+c = c +" String!";
 
 // Math
 
 var sum = 10 + 10;
-console.log(sum)
+console.log(sum);
 
 var difference = 45 - 33;
-console.log(difference)
+console.log(difference);
 
 // regular operators apply + - * /
 
@@ -31,18 +31,25 @@ var remainder;
 remainder = 11 % 3;
 
 myVar *= 10;
-console.log(myVar)
+console.log(myVar);
 
 myVar /= 10;
-console.log(myVar)
+console.log(myVar);
 
 // Escape characters \
 
-var myStr = "\"Mathieu\""
-console.log(myStr)
+var myStr = "\"Mathieu\"";
+console.log(myStr);
 
-var myStr2 = '"Mathieu"'
-console.log(myStr2)
+var myStr2 = '"Mathieu"';
+console.log(myStr2);
 
-var myStr3 = `'"Woah single and double quotes, how did he do that?"'`
-console.log(myStr3)
+var myStr3 = `'"Woah single and double quotes, how did he do that?"'`;
+console.log(myStr3);
+
+// Concatenate strings
+
+var ourStr = "I come first. " + "I come second.";
+
+var ourStr2 = "I come third. ";
+ourStr2 += "I come fourth.";
