@@ -35,3 +35,14 @@ console.log(myVar)
 
 myVar /= 10;
 console.log(myVar)
+
+// Escape characters \
+
+var myStr = "\"Mathieu\""
+console.log(myStr)
+
+var myStr2 = '"Mathieu"'
+console.log(myStr2)
+
+var myStr3 = `'"Woah single and double quotes, how did he do that?"'`
+console.log(myStr3)
