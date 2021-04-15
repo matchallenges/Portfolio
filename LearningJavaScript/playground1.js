@@ -90,3 +90,12 @@ ourArray.pop()
 ourArray.shift()
 console.log(ourArray) // shift to the left
 ourArray.unshift("Lucas") // adds Lucas to the start of the array 
+
+// Functions
+
+function adding(x, y){
+    sum = x + y
+    return sum
+}
+
+adding(3, 4)
