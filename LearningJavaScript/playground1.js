@@ -99,3 +99,9 @@ function adding(x, y){
 }
 
 adding(3, 4)
+
+var collections = {
+    "poison" : "cyanide"
+}
+
+console.log(collections.poison)
