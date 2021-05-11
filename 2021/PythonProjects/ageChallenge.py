@@ -6,3 +6,8 @@ elif(age > 10 and age <= 20):
     print("Getting up there");
 elif(age > 20):
     print("Dinosaur age!");
+
+Stdin = input("What is x?: ")
+addItself = lambda x: x + x
+
+print(addItself(Stdin))
