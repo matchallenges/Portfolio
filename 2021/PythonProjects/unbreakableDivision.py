@@ -10,6 +10,9 @@ except SyntaxError:
 except TypeError:
     print("Error Message: type an integer please!")
     exit()
+except ValueError:
+    print("Error Message: type an integer please!")
+    exit()
 
 # input an integer input for denominator
 try:
@@ -21,6 +24,9 @@ except SyntaxError:
     print("Error Message: type an integer please!")
     exit()
 except TypeError:
+    print("Error Message: type an integer please!")
+    exit()
+except ValueError:
     print("Error Message: type an integer please!")
     exit()
 
@@ -38,4 +44,6 @@ except SyntaxError:
 except TypeError:
     print("Error Message: type an integer please!")
     exit()
-
+except ValueError:
+    print("Error Message: type an integer please!")
+    exit()
