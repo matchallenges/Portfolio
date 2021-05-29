@@ -6,60 +6,93 @@ import random
 
 squareType = ["Swamp", "Grassland", "Hill"]
 squareEvents = ["No enemies in site", "A monster sits before you"]
-squareLocation = [0, 0]
-
-#Variables
-
-exitCode = False
-xLocation = squareLocation[0]
-yLocation = squareLocation[1]
+fighting = ["Dead", "Alive"]
+fighting_result = ["Dead"]
+monster_ecounter = ["A monster sits before you"]
+x = 0
+y = 0
 
 #Main loop
 
-while exitCode != True:
-    
+while True:
+
     Type = random.choices(squareType, weights=(10, 20, 10), k=1)
     Event = random.choices(squareEvents, weights=(50, 20), k=1)
-
+    Monst =  random.choices(monster_ecounter, k=1)
     Question = input("Which way would you like to go? (UP, DOWN, LEFT, RIGHT): ")
-
+    
     if Question == "UP":
-        yLocation += 1
+        y += 1
         print("Scenery: ")
         print(*Type)
         print("Event: ")
         print(*Event)
         print("Location: ")
-        print(squareLocation)
-        continue
+        print(x, y)
+        if Event == Monst:
+            print("You are fighting curageously")
+            die = random.choices(fighting, weights=(10, 10), k=1)
+            die1 = random.choices(fighting_result,  k=1)
+            if die == die1:
+                print("You died in the process")
+                exit()
+            else:
+                continue
+
     elif Question == "DOWN":
-        yLocation -= 1
+        y -= 1
         print("Scenery: ")
         print(*Type)
         print("Event: ")
         print(*Event)
         print("Location: ")
-        print(squareLocation)
-        continue
+        print(x, y)
+        if Event == Monst:
+            print("You are fighting curageously")
+            die = random.choices(fighting, weights=(10, 10), k=1)
+            die1 = random.choices(fighting_result,  k=1)
+            if die == die1:
+                print("You died in the process")
+                exit()
+            else:
+                continue
+
     elif Question == "LEFT":
-        xLocation
+        x -= 1
         print("Scenery: ")
         print(*Type)
         print("Event: ")
         print(*Event)
         print("Location: ")
-        print(squareLocation)
-        continue
+        print(x, y)
+        if Event == Monst:
+            print("You are fighting curageously")
+            die = random.choices(fighting, weights=(10, 10), k=1)
+            die1 = random.choices(fighting_result,  k=1)
+            if die == die1:
+                print("You died in the process")
+                exit()
+            else:
+                continue
+
     elif Question == "RIGHT":
-        xLocation += 1
+        x += 1
         print("Scenery: ")
         print(*Type)
         print("Event: ")
         print(*Event)
         print("Location: ")
-        print(squareLocation)
-        continue
-    else:
-        continue
+        print(x, y)
+        if Event == Monst:
+            print("You are fighting curageously")
+            die = random.choices(fighting, weights=(10, 10), k=1)
+            die1 = random.choices(fighting_result,  k=1)
+            if die == die1:
+                print("You died in the process")
+                exit()
+            else:
+                continue
+
+    
 
     
