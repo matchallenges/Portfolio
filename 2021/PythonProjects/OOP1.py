@@ -5,7 +5,7 @@ class Orange:
         self.weight=weight
         self.color=color
 
-orange=Orange(10, 'purple')
+orange=Orange(10, 'orange')
 
 
 print(orange.weight)
