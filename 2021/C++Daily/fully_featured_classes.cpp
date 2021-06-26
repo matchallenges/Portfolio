@@ -3,11 +3,17 @@
 
 struct YearKeeper
 {
+    YearKeeper(int year_in){
+        if(set_year(year_in) == 0){
+            year = 2019;
+        }
+        else year = year_in;
+    }
     void add_year(){
         year++;
     }
 
-    int get_year(){
+    unsigned int get_year(){
         return year;
     }
 
@@ -15,15 +21,22 @@ struct YearKeeper
         if (new_year > 2021) return 0;
         else year = new_year;
         return 1;
+
+    
+    }
+
+      ~YearKeeper(){
+          std::cout << "\nDestructor question: What is your name? ";
+          std::cin >> my_name;
+          std::cout << "Cleaning up the class now " << my_name;
     }
     private:
-        int year;
+        int year{};
+        char my_name[64]{};
+    
 };
 
 int main(){
-    YearKeeper yearkeeper;
-    std::cout << yearkeeper.set_year(2022) << "\n";
-    std::cout << yearkeeper.get_year() << "\n";
-    std::cout << yearkeeper.set_year(2019) << "\n";
-    std::cout << yearkeeper.get_year() << "\n";
+    YearKeeper clock{ 500 };
+    std::cout << clock.get_year();
 }
