@@ -24,12 +24,13 @@ struct YearKeeper
 
     
     }
-
+/*
       ~YearKeeper(){
           std::cout << "\nDestructor question: What is your name? ";
           std::cin >> my_name;
           std::cout << "Cleaning up the class now " << my_name;
     }
+*/
     private:
         int year{};
         char my_name[64]{};
@@ -38,5 +39,8 @@ struct YearKeeper
 
 int main(){
     YearKeeper clock{ 2021 };
-    std::cout << clock.get_year();
+    YearKeeper* clock_ptr = &clock;
+    clock_ptr->set_year(1436); 
+    std::cout << clock_ptr->get_year() << "\n";
+    std::cout << clock_ptr;
 }
