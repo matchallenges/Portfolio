@@ -5,7 +5,7 @@ struct YearKeeper
 {
     YearKeeper(int year_in){
         if(set_year(year_in) == 0){
-            year = 2019;
+            year = 2021;
         }
         else year = year_in;
     }
@@ -37,6 +37,6 @@ struct YearKeeper
 };
 
 int main(){
-    YearKeeper clock{ 500 };
+    YearKeeper clock{ 2021 };
     std::cout << clock.get_year();
 }
